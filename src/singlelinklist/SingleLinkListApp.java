@@ -14,7 +14,25 @@ public class SingleLinkListApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        SingleLL sl = new SingleLL();
+        sl.add("elem1");
+        sl.add(2, "elem2");
+        sl.add(3, "elem3");
+        
+        System.out.println("Size: " +sl.size());
+        sl.display();
+        sl.add(2, "elem4");
+         System.out.println("Size: " +sl.size());
+        sl.display();
+        sl.remove(1);
+        System.out.println("index 1 removed");
+        sl.display();
+        sl.remove(1);
+        System.out.println("index 1 removed");
+        sl.display();
+        sl.remove(1);
+        sl.remove(1);
+        sl.remove(1);
     }
     
 }
